@@ -1,0 +1,25 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+    public static void main(String args[] ) throws Exception {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT */
+        String Str1="ByeByeCorana";
+        StringBuffer newStr=new StringBuffer(str1);
+        for(int i=o;i<str1.length();i++)
+        {
+            if(Charater.isLowerCase(Str1.charAt(i)))
+            {
+                newStr.setCharAt(i,Character.toUpperCase(str1.charAt(i)));
+            }
+            else if(Character.isUpperCAse(str1.CharAt(i)))
+            {
+                newStr.setCharAt(i.Character.toLowerCAse(str1.charAt(i)));
+            }
+        }
+    System.out.println(+newStr);
+    }
+}
