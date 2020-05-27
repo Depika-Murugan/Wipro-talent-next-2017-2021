@@ -1,0 +1,42 @@
+import java.util.regex.*;
+
+public class Solution {
+    public static void main(String args[] ) throws Exception {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT */
+        Map<Integer , Integer>elementCountmap=new LinkedHashMap<>();
+        for(int i=0;i<inputArray.length;i++)
+        {
+            if(elementCountMap.containsKey(inputArray[i]))
+            {
+                elementCountMap.put(inputArray[i],elementCountMap.get(inputArray[i]+1));
+            }
+            else
+            {
+                elementCountMap.put(inputArray[i],1);
+            }
+        }
+        ArrayList<Entry<Integer, Integer>>listOfEntr = new ArrayList<>(elementCountMap.entrySet());
+        Collections.sort(listOfEntry,new Comparator<Entry<Integer,Integer>>()
+                                    {
+                                        @overide
+                                        public int compare(Entry<Integer,Integer>o1,Entry<Integer,Integer>o2)
+                                        {
+                                            return o2.getValue().compareTo(o1.getValue());
+                                        }
+                                     }
+        );
+        System.out.println("input array :"+Array.toString(inputArray));
+        for(Entry<Integer,Integer>entry:listOFEntry)
+        {
+            int frequency=entry.getvalue();
+            while(frequency>=1)
+            {
+                System.out.println(entry.getKey()+"");
+                frequency--;
+            }
+        }
+        public static void main(String[] args);
+        {
+            sortArrayElementsByFrequency(new int[]{10,2,3,2,2,3,8,11,12,11,12});
+        }
+}
