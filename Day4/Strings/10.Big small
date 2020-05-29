@@ -4,9 +4,9 @@ public class Bigger
     {
       Stringa="Helloo";
       Stringb="World123abc";
-      Stringbigger=a.length()>b.length()?a:b;
-      Stringsmaller=a.length()<b.length()?a:b;
-      StringBuffersb=newStringBuffer();
+      String bigger=a.length()>b.length()?a:b;
+      String smaller=a.length()<b.length()?a:b;
+      String Buffersb=newStringBuffer();
       for(inti=0;i<smaller.length();i++)
       {
         sb.append(a.charAt(i)).append(b.charAt(i));
