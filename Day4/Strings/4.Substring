@@ -1,0 +1,9 @@
+public class String
+{
+    publicstaticvoidmain(String[]args)
+    {
+        String str="Wipro";
+        str=str.substring(1,str.length()-1);
+        System.out.println(str);
+    }
+}
