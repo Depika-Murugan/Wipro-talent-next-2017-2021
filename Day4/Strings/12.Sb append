@@ -1,0 +1,12 @@
+public class Sbapend{
+public static void main(String[]args){
+String str="Wipro";
+int n=3;
+String Buffer sb=new String Buffer();
+for(inti=0;i<n;i++)
+{
+  sb.append(str.substring(str.length()-n));
+}
+System.out.println(sb);
+}
+}
