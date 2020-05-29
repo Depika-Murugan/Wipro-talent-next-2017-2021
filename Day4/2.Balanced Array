@@ -1,0 +1,35 @@
+import java.util.Scanner;
+class Result {
+
+    /*
+     * Complete the 'balancedSum' function below.
+     *
+     * The function is expected to return an INTEGER.
+     * The function accepts INTEGER_ARRAY arr as parameter.
+     */
+
+    public static int balancedSum(List<Integer> arr) {
+    // Write your code here
+    static int  abc(int arr[], int n)
+    {
+        int[] form=new int[n];
+        form[0]=arra[0];
+        for(int i=1;i<n;i++)
+        form[i]=form[i-1] + arr[i];
+        int[] twoform[n-1]= arr[n-1];
+        twoform[i] = twoform[i+1]+arr[i];
+        for(int i=1;i<n-1;i++)
+        if(form[i] == twoform[i])
+            return arr[i];
+                return-1;
+    }
+    public static voin main(String[] ags[])
+    {
+        int arr[]={1,2,3,3};
+        int n=arr.length;
+        System.out.println(abc(arr.n));
+    }
+    }
+    }
+
+}
