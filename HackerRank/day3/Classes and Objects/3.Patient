@@ -1,0 +1,22 @@
+
+class patient
+{
+    String name;
+    double height,weight,k;
+    double bmi()
+    {
+        k=(weight/(height*height))*703;
+        return k;
+    }
+}
+public class Main
+{
+	public static void main(String[] args) {
+	    patient p=new patient();
+	    p.height=100;
+	    p.weight=89;
+	    double k=p.bmi();
+		System.out.println("BMI"+k);  
+	}
+}
+© 2020 GitHub, Inc.
