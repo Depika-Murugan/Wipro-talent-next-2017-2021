@@ -1,0 +1,38 @@
+int d=1;int c=1;
+        char s1[]={'a','e','i','o','u'};
+        char a='a';int j;
+        TreeSet <Integer> ls=new TreeSet<Integer>();
+        for(int i=0;i<s.length();i++){
+            if(s.charAt(i)==a){
+        
+            for(j=i;j<=s.length()-1;j++){
+                if(s.charAt(j)==a){
+                c=c+1;}
+              //  System.out.print(c);}
+ 
+             else {
+                if(s.charAt(j)<a)
+                    continue;
+               /* else
+                j=s.length()-1; 
+                 //   break;
+                }
+                */}
+                if(j!=s.length()-1){
+                if(a<s.charAt(j+1))
+                a=s1[d++];}
+           //  System.out.print(a);}
+                
+ 
+            }
+            }
+            ls.add(c);
+            c=1;
+            d=0;
+            a=s1[d];
+            
+ 
+        }
+        //int m=ls.get(ls.size()-1);
+       System.out.print(ls.pollLast());
+        //System.out.print(c);
