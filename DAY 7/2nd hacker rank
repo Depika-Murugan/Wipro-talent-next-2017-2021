@@ -1,0 +1,9 @@
+Scanner in = new Scanner(System.in);
+        int n = in.nextInt();
+        for(int a0 = 0; a0 < n; a0++){
+            String name = in.next();
+            int d = in.nextInt();
+            int j = in.nextInt();
+        }
+        // Write Your Code Here
+        in.close();
